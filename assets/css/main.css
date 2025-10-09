@@ -353,8 +353,65 @@ a:hover
 
 
 
-/** 4. Hero --> Front Content 
+/** 4. Hero --> Front Content
 *******************************************************************/
+
+.hero .top-right-link
+{
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 40px;
+}
+
+.hero .top-right-link a
+{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    letter-spacing: .025em;
+
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.hero .top-right-link a:hover
+{
+    color: #111;
+    background: #fff;
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px)
+{
+    .hero .top-right-link
+    {
+        top: 20px;
+        right: 20px;
+    }
+
+    .hero .top-right-link a
+    {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+    }
+}
 
 .hero .front-content
 {
