@@ -1,32 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <!-- Homepage (English - Default) -->
+    <!-- Homepage (Chinese - Default) -->
     <url>
         <loc>https://moments.top/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://moments.top/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://moments.top/index-zh.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://moments.top/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://moments.top/index-en.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://moments.top/"/>
-        <lastmod>2025-12-27</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Homepage (Chinese) -->
+    <!-- Homepage (English) -->
     <url>
-        <loc>https://moments.top/index-zh.html</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://moments.top/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://moments.top/index-zh.html"/>
+        <loc>https://moments.top/index-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://moments.top/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://moments.top/index-en.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://moments.top/"/>
-        <lastmod>2025-12-27</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+
+    <!-- FAQ (Chinese) -->
+    <url>
+        <loc>https://moments.top/faq.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://moments.top/faq.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://moments.top/faq-en.html"/>
+        <lastmod>2025-12-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- FAQ (English) -->
+    <url>
+        <loc>https://moments.top/faq-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://moments.top/faq.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://moments.top/faq-en.html"/>
+        <lastmod>2025-12-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Case Studies -->
+    <url>
+        <loc>https://moments.top/cases.html</loc>
+        <lastmod>2025-12-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
 
     <!-- IELabs Page -->
     <url>
         <loc>https://moments.top/IELabs.html</loc>
-        <lastmod>2025-12-13</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
