@@ -38,7 +38,16 @@ php -S localhost:8000
 ```
 
 ### Deployment
-Deployed to Netlify with configuration in [netlify.toml](netlify.toml):
+Deployed to Netlify. **Use Netlify CLI to deploy (NOT git push)**:
+
+```bash
+cd /Users/kadenliu/Documents/GitHub/moments-coming-soon
+netlify deploy --prod
+```
+
+This will deploy directly to https://moments.top
+
+Configuration in [netlify.toml](netlify.toml):
 - Publish directory: `.` (root)
 - Static assets cached for 1 year
 - Security headers applied (X-Frame-Options, X-XSS-Protection, etc.)

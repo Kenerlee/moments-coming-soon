@@ -43,12 +43,26 @@ Launch/
 1. Clone this repository:
    ```bash
    git clone [your-repo-url]
-   cd Launch
+   cd moments-coming-soon
    ```
 
-2. Open `index.html` in your web browser or set up a local server.
+2. Open `index.html` in your web browser or set up a local server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+   Then visit http://localhost:8000
 
 3. For the email subscription functionality to work, you'll need to configure the PHP backend or replace it with your preferred solution.
+
+## Deployment
+
+Deploy to production using Netlify CLI:
+
+```bash
+netlify deploy --prod
+```
+
+This will deploy directly to https://moments.top
 
 ## Customization
 

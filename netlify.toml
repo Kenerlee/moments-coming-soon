@@ -5,6 +5,24 @@
 [build.environment]
   # Environment variables can be set here if needed
 
+# Build processing
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = false
+  minify = false
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
 [[headers]]
   # Apply security headers to all pages
   for = "/*"
@@ -15,13 +33,50 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
+  # Cache HTML files with short expiry for updates
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
   # Cache static assets for better performance
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
-  # Handle any 404s by serving the main page (single page app behavior)
+  # Coming Soon page accessible at /coming-soon
+  from = "/coming-soon"
+  to = "/coming-soon.html"
+  status = 200
+
+[[redirects]]
+  # Cases page accessible at /cases
+  from = "/cases"
+  to = "/cases.html"
+  status = 200
+
+[[redirects]]
+  # Guomai case detail
+  from = "/cases/guomai"
+  to = "/cases.html"
+  status = 200
+
+[[redirects]]
+  # Mining overseas case detail
+  from = "/cases/mining-overseas"
+  to = "/cases.html"
+  status = 200
+
+[[redirects]]
+  # Baidu verification file (preserve exact case)
+  from = "/baidu_verify_codeva-D2S6frLg27.html"
+  to = "/baidu_verify_codeva-D2S6frLg27.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  # Handle any 404s by serving the main page
   from = "/*"
   to = "/index.html"
   status = 404

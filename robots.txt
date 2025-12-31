@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://moments.top/sitemap.xml
+
+# Disallow test and coming-soon pages
+Disallow: /test-embed.html
+Disallow: /coming-soon.html
