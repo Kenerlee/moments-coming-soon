@@ -76,6 +76,12 @@
   force = true
 
 [[redirects]]
+  # Cases English page accessible at /cases-en
+  from = "/cases-en"
+  to = "/cases-en.html"
+  status = 200
+
+[[redirects]]
   # Handle any 404s by serving the main page
   from = "/*"
   to = "/index.html"
