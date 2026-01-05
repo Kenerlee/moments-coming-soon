@@ -1557,17 +1557,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Hero Trust Bar (DSS: Source Authority) */
+/* Trust Bar - 横排布局 with Real Logos */
 .hero__trust-bar {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: var(--space-6);
     margin-top: var(--space-6);
-    padding: var(--space-4) var(--space-6);
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--color-border);
 }
 
 .hero__trust-item {
@@ -1578,24 +1576,32 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-secondary);
 }
 
-.hero__trust-item svg {
-    color: var(--color-primary);
-    opacity: 0.8;
+.hero__trust-logo {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.85;
+    filter: grayscale(20%);
+    transition: all var(--transition-base);
 }
 
-.hero__trust-item--media {
-    color: var(--color-accent-orange);
+.hero__trust-item:hover .hero__trust-logo {
+    opacity: 1;
+    filter: grayscale(0%);
 }
 
 @media (max-width: 768px) {
     .hero__trust-bar {
-        flex-direction: column;
-        gap: var(--space-3);
-        padding: var(--space-4);
+        justify-content: center;
+        gap: var(--space-4);
     }
 
     .hero__trust-item {
         font-size: var(--text-xs);
+    }
+
+    .hero__trust-logo {
+        height: 16px;
     }
 }
 
@@ -1625,9 +1631,14 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-secondary);
 }
 
-/* Team Experience Stats (DSS: Data Support) */
-.hero__stat--team .hero__stat-value {
+/* Highlight Stats (DSS: Data Support) - 团队经验数据 */
+.hero__stat--highlight .hero__stat-value {
     color: var(--color-accent-orange);
+    font-weight: var(--font-extrabold);
+}
+
+.hero__stat--highlight .hero__stat-label {
+    color: var(--color-text-tertiary);
 }
 
 .hero__stat--team .hero__stat-label {

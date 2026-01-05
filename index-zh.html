@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="baidu-site-verification" content="codeva-k3MWtOorHY" />
+    <meta name="msvalidate.01" content="8A2F4B3CEDD0F6D40340B96794C7BD5B" />
+    <meta name="bytedance-verification-code" content="geeD8O5hY6u7b/rF2k9Z" />
+
+    <title>Moments - AI驱动的企业数智化转型专家</title>
+    <meta name="description" content="Moments提供AI调研、数智化转型、AI Agent定制等企业级服务，助力企业实现智能化升级。">
+    <meta name="keywords" content="AI调研, 数智化转型, AI Agent, 企业AI服务, 出海调研, AI咨询">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Moments - AI驱动的企业数智化转型专家">
+    <meta property="og:description" content="AI调研、数智化转型、AI Agent定制，助力企业智能化升级。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moments.top">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/site.css?v=20251231b" as="style">
+    <link rel="preload" href="assets/js/site.js" as="script">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/site.css?v=20251231b">
+
+    <!-- Google Analytics - Delayed loading for China -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8E6JSMHPPH');
+
+        // Delay GA loading to not block page render
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-8E6JSMHPPH';
+                script.onerror = function() {
+                    console.log('GA unavailable (expected in China)');
+                };
+                document.head.appendChild(script);
+            }, 3000); // Load after 3 seconds
+        });
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ushn6a215o");
+    </script>
+
+    <!-- Baidu Tongji (百度统计) -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0f876f77439dbbcf52a53574d3c6f33e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main" class="visually-hidden">跳转到主要内容</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="主导航">
+                <!-- Logo -->
+                <a href="/" class="nav__logo" aria-label="Moments 首页">
+                    <img src="assets/img/logo.png" alt="Moments" class="nav__logo-img">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="nav__menu">
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#ai-research" class="nav__link">AI调研</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#digital-transform" class="nav__link">数智化转型</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="IELabs.html" class="nav__link">IELabs智创工坊</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">关于我们</a>
+                    </li>
+                </ul>
+
+                <!-- Actions -->
+                <div class="nav__actions">
+                    <!-- Language Switcher -->
+                    <div class="lang-switch">
+                        <a href="index.html" class="lang-switch__btn">EN</a>
+                        <a href="index-zh.html" class="lang-switch__btn lang-switch__btn--active">中</a>
+                    </div>
+                    <button class="btn btn--ghost" data-theme-toggle aria-label="切换主题">
+                        <svg class="icon icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="icon icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="#contact" class="btn btn--primary">联系我们</a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="nav__toggle" aria-label="切换菜单" aria-expanded="false">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="section hero" id="hero">
+            <!-- Spotlight Effect -->
+            <div class="hero__spotlight">
+                <div class="hero__spotlight-beam hero__spotlight-beam--left"></div>
+                <div class="hero__spotlight-beam hero__spotlight-beam--center"></div>
+                <div class="hero__spotlight-beam hero__spotlight-beam--right"></div>
+                <div class="hero__spotlight-glow"></div>
+            </div>
+            <div class="container">
+                <div class="hero__content">
+                    <!-- Badge -->
+                    <div class="hero__badge" data-animate="fade-up">
+                        <span class="hero__badge-text">AI-Powered Enterprise Solutions</span>
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="hero__title" data-animate="fade-up">
+                        AI驱动的<br>
+                        <span class="highlight">企业数智化转型</span><br>专家
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="hero__subtitle" data-animate="fade-up">
+                        从AI调研到数智化落地，我们为企业提供全链路AI服务。<br>
+                        自研AI Agent中台，赋能企业智能化升级。
+                    </p>
+
+                    <!-- CTA -->
+                    <div class="hero__cta" data-animate="fade-up">
+                        <a href="#contact" class="btn btn--primary btn--lg">
+                            预约咨询
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#services" class="btn btn--secondary btn--lg">
+                            了解服务
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero__stats" data-animate="fade-up">
+                        <div class="hero__stat">
+                            <span class="hero__stat-value">50+</span>
+                            <span class="hero__stat-label">企业客户</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-value">200+</span>
+                            <span class="hero__stat-label">AI项目</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-value">95%</span>
+                            <span class="hero__stat-label">客户满意度</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero__image" data-animate="zoom">
+                    <div class="hero__image-wrapper">
+                        <!-- AI Dashboard Mockup -->
+                        <svg viewBox="0 0 800 500" style="width:100%;height:auto;background:var(--color-bg-secondary);border-radius:16px;">
+                            <!-- Header Bar -->
+                            <rect x="0" y="0" width="800" height="50" fill="var(--color-bg-tertiary)"/>
+                            <circle cx="25" cy="25" r="6" fill="#f72585"/>
+                            <circle cx="45" cy="25" r="6" fill="#f8961e"/>
+                            <circle cx="65" cy="25" r="6" fill="#00d4aa"/>
+                            <text x="400" y="30" fill="var(--color-text-secondary)" font-size="14" text-anchor="middle">AI Agent 中台</text>
+
+                            <!-- Sidebar -->
+                            <rect x="0" y="50" width="180" height="450" fill="var(--color-bg-tertiary)"/>
+                            <rect x="20" y="80" width="140" height="14" rx="7" fill="var(--color-primary)" opacity="0.3"/>
+                            <rect x="20" y="110" width="100" height="10" rx="5" fill="var(--color-border)"/>
+                            <rect x="20" y="135" width="120" height="10" rx="5" fill="var(--color-border)"/>
+                            <rect x="20" y="160" width="90" height="10" rx="5" fill="var(--color-border)"/>
+                            <rect x="20" y="185" width="110" height="10" rx="5" fill="var(--color-border)"/>
+
+                            <!-- Main Content -->
+                            <!-- AI Agents Grid -->
+                            <rect x="200" y="70" width="180" height="120" rx="12" fill="var(--color-bg-elevated)" stroke="var(--color-primary)" stroke-width="1"/>
+                            <circle cx="250" cy="110" r="20" fill="var(--color-primary)" opacity="0.2"/>
+                            <text x="250" y="115" fill="var(--color-primary)" font-size="16" text-anchor="middle">AI</text>
+                            <text x="290" y="105" fill="var(--color-text-primary)" font-size="12">调研Agent</text>
+                            <text x="290" y="125" fill="var(--color-text-secondary)" font-size="10">运行中</text>
+                            <circle cx="350" cy="115" r="5" fill="#00d4aa"/>
+
+                            <rect x="400" y="70" width="180" height="120" rx="12" fill="var(--color-bg-elevated)"/>
+                            <circle cx="450" cy="110" r="20" fill="#4cc9f0" opacity="0.2"/>
+                            <text x="450" y="115" fill="#4cc9f0" font-size="16" text-anchor="middle">AI</text>
+                            <text x="490" y="105" fill="var(--color-text-primary)" font-size="12">营销Agent</text>
+                            <text x="490" y="125" fill="var(--color-text-secondary)" font-size="10">待命</text>
+
+                            <rect x="600" y="70" width="180" height="120" rx="12" fill="var(--color-bg-elevated)"/>
+                            <circle cx="650" cy="110" r="20" fill="#00d4aa" opacity="0.2"/>
+                            <text x="650" y="115" fill="#00d4aa" font-size="16" text-anchor="middle">AI</text>
+                            <text x="690" y="105" fill="var(--color-text-primary)" font-size="12">客服Agent</text>
+                            <text x="690" y="125" fill="var(--color-text-secondary)" font-size="10">运行中</text>
+                            <circle cx="750" cy="115" r="5" fill="#00d4aa"/>
+
+                            <!-- Analytics Panel -->
+                            <rect x="200" y="210" width="280" height="260" rx="12" fill="var(--color-bg-elevated)"/>
+                            <text x="220" y="240" fill="var(--color-text-primary)" font-size="14">数据洞察</text>
+
+                            <!-- Chart -->
+                            <polyline points="220,420 280,380 340,400 400,340 460,320"
+                                      fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round"/>
+                            <polyline points="220,430 280,410 340,420 400,380 460,360"
+                                      fill="none" stroke="#00d4aa" stroke-width="2" stroke-linecap="round" stroke-dasharray="5,5"/>
+
+                            <!-- Workflow Panel -->
+                            <rect x="500" y="210" width="280" height="260" rx="12" fill="var(--color-bg-elevated)"/>
+                            <text x="520" y="240" fill="var(--color-text-primary)" font-size="14">自动化工作流</text>
+
+                            <!-- Workflow nodes -->
+                            <circle cx="560" cy="300" r="15" fill="var(--color-primary)" opacity="0.3" stroke="var(--color-primary)"/>
+                            <line x1="575" y1="300" x2="620" y2="300" stroke="var(--color-border)" stroke-width="2"/>
+                            <circle cx="640" cy="300" r="15" fill="#4cc9f0" opacity="0.3" stroke="#4cc9f0"/>
+                            <line x1="655" y1="300" x2="700" y2="300" stroke="var(--color-border)" stroke-width="2"/>
+                            <circle cx="720" cy="300" r="15" fill="#00d4aa" opacity="0.3" stroke="#00d4aa"/>
+
+                            <rect x="520" y="350" width="100" height="30" rx="6" fill="var(--color-primary)" opacity="0.2"/>
+                            <text x="570" y="370" fill="var(--color-primary)" font-size="11" text-anchor="middle">触发条件</text>
+                            <rect x="640" y="350" width="100" height="30" rx="6" fill="#00d4aa" opacity="0.2"/>
+                            <text x="690" y="370" fill="#00d4aa" font-size="11" text-anchor="middle">执行动作</text>
+                        </svg>
+                    </div>
+
+                    <!-- Floating Cards -->
+                    <div class="hero__float hero__float--1" data-animate="fade-right">
+                        <div class="stat-card">
+                            <span class="stat-card__value">+85%</span>
+                            <span class="stat-card__label">效率提升</span>
+                        </div>
+                    </div>
+                    <div class="hero__float hero__float--2" data-animate="fade-left">
+                        <div class="notification-card">
+                            <div class="notification-card__icon">&#10003;</div>
+                            <span>调研报告已生成</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background -->
+            <div class="hero__bg">
+                <div class="hero__gradient"></div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="section section--lg" id="services">
+            <div class="container">
+                <header class="section__header" data-animate="fade-up">
+                    <span class="section__label">Our Services</span>
+                    <h2 class="section__title">
+                        全链路AI服务<br>助力企业智能升级
+                    </h2>
+                    <p class="section__description">
+                        从调研洞察到落地实施，我们提供端到端的企业AI解决方案
+                    </p>
+                </header>
+
+                <div class="services-grid" data-animate-stagger>
+                    <!-- Service 1: AI Research -->
+                    <div class="service-card service-card--featured" data-animate="fade-up" id="ai-research">
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                            <span class="service-card__number">01</span>
+                        </div>
+                        <h3 class="service-card__title">AI调研</h3>
+                        <p class="service-card__description">
+                            用AI重新定义市场调研，快速获取深度洞察
+                        </p>
+                        <ul class="service-card__list">
+                            <li>
+                                <strong>摸摸底产品</strong>
+                                <span>自研AI调研工具，一键生成调研报告</span>
+                            </li>
+                            <li>
+                                <strong>专家调研服务</strong>
+                                <span>出海调研、产品创新、竞争对手分析、市场调研</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="service-card__link">
+                            了解更多
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Service 2: Digital Transformation -->
+                    <div class="service-card service-card--featured" data-animate="fade-up" id="digital-transform">
+                        <div class="service-card__header">
+                            <div class="service-card__icon service-card__icon--alt">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <span class="service-card__number">02</span>
+                        </div>
+                        <h3 class="service-card__title">数智化转型</h3>
+                        <p class="service-card__description">
+                            从咨询到落地，全方位赋能企业AI升级
+                        </p>
+                        <ul class="service-card__list">
+                            <li>
+                                <strong>自研AI Agent中台</strong>
+                                <span>企业级AI Agent管理与编排平台</span>
+                            </li>
+                            <li>
+                                <strong>AI咨询</strong>
+                                <span>企业AI服务设计、AI教育培训、GEO优化</span>
+                            </li>
+                            <li>
+                                <strong>AI建设</strong>
+                                <span>AI中台、AI获客、AI营销、Agent定制</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="service-card__link">
+                            了解更多
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Research Detail Section -->
+        <section class="section section--lg feature-showcase">
+            <div class="container">
+                <!-- MoMoDi Product -->
+                <div class="feature-row">
+                    <div class="feature-row__content" data-animate="fade-right">
+                        <span class="section__label">AI调研产品</span>
+                        <h3 class="feature-row__title">
+                            摸摸底 - 一键AI调研
+                        </h3>
+                        <p class="feature-row__description">
+                            自研AI调研工具，输入一个问题，自动生成专业调研报告。无需繁琐的数据收集和整理，AI帮你完成从信息采集到洞察分析的全流程。
+                        </p>
+                        <ul class="feature-row__list">
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                全网信息自动采集与整合
+                            </li>
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                多维度数据分析与可视化
+                            </li>
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                一键导出专业调研报告
+                            </li>
+                        </ul>
+                        <a href="https://momodi.org" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                            免费试用
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="feature-row__image" data-animate="fade-left">
+                        <svg viewBox="0 0 500 350" style="width:100%;height:auto;background:var(--color-bg-elevated);border-radius:16px;padding:24px;">
+                            <!-- Search/Research Interface -->
+                            <rect x="20" y="20" width="460" height="50" rx="25" fill="var(--color-bg-tertiary)" stroke="var(--color-border)"/>
+                            <circle cx="50" cy="45" r="12" fill="var(--color-primary)" opacity="0.2"/>
+                            <text x="50" y="50" fill="var(--color-primary)" font-size="14" text-anchor="middle">AI</text>
+                            <text x="100" y="50" fill="var(--color-text-secondary)" font-size="14">输入你想调研的问题...</text>
+
+                            <!-- Report Preview -->
+                            <rect x="20" y="90" width="220" height="240" rx="12" fill="var(--color-bg-tertiary)"/>
+                            <rect x="35" y="110" width="120" height="12" rx="6" fill="var(--color-primary)" opacity="0.5"/>
+                            <rect x="35" y="135" width="190" height="8" rx="4" fill="var(--color-border)"/>
+                            <rect x="35" y="155" width="170" height="8" rx="4" fill="var(--color-border)"/>
+                            <rect x="35" y="175" width="180" height="8" rx="4" fill="var(--color-border)"/>
+
+                            <!-- Mini Chart -->
+                            <rect x="35" y="200" width="190" height="80" rx="8" fill="var(--color-bg-elevated)"/>
+                            <polyline points="50,260 80,240 110,250 140,220 170,230 200,210"
+                                      fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"/>
+
+                            <text x="35" y="310" fill="var(--color-text-secondary)" font-size="10">调研报告.pdf</text>
+
+                            <!-- Insights Panel -->
+                            <rect x="260" y="90" width="220" height="240" rx="12" fill="var(--color-bg-tertiary)"/>
+                            <text x="275" y="115" fill="var(--color-text-primary)" font-size="13">关键洞察</text>
+
+                            <rect x="275" y="135" width="190" height="45" rx="8" fill="var(--color-primary)" opacity="0.1"/>
+                            <circle cx="295" cy="157" r="10" fill="var(--color-primary)" opacity="0.3"/>
+                            <text x="295" y="162" fill="var(--color-primary)" font-size="12" text-anchor="middle">1</text>
+                            <rect x="315" y="147" width="130" height="8" rx="4" fill="var(--color-border)"/>
+                            <rect x="315" y="162" width="100" height="6" rx="3" fill="var(--color-border)" opacity="0.5"/>
+
+                            <rect x="275" y="195" width="190" height="45" rx="8" fill="#00d4aa" opacity="0.1"/>
+                            <circle cx="295" cy="217" r="10" fill="#00d4aa" opacity="0.3"/>
+                            <text x="295" y="222" fill="#00d4aa" font-size="12" text-anchor="middle">2</text>
+                            <rect x="315" y="207" width="120" height="8" rx="4" fill="var(--color-border)"/>
+                            <rect x="315" y="222" width="90" height="6" rx="3" fill="var(--color-border)" opacity="0.5"/>
+
+                            <rect x="275" y="255" width="190" height="45" rx="8" fill="#4cc9f0" opacity="0.1"/>
+                            <circle cx="295" cy="277" r="10" fill="#4cc9f0" opacity="0.3"/>
+                            <text x="295" y="282" fill="#4cc9f0" font-size="12" text-anchor="middle">3</text>
+                            <rect x="315" y="267" width="140" height="8" rx="4" fill="var(--color-border)"/>
+                            <rect x="315" y="282" width="80" height="6" rx="3" fill="var(--color-border)" opacity="0.5"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Expert Research Services -->
+                <div class="feature-row feature-row--reverse">
+                    <div class="feature-row__content" data-animate="fade-left">
+                        <span class="section__label">专家调研服务</span>
+                        <h3 class="feature-row__title">
+                            深度洞察，精准决策
+                        </h3>
+                        <p class="feature-row__description">
+                            结合AI技术与行业专家经验，为企业提供深度定制化调研服务。无论是出海战略、产品创新还是竞争分析，我们都能提供专业支持。
+                        </p>
+                        <div class="feature-row__tags">
+                            <span class="tag">出海调研</span>
+                            <span class="tag">产品创新</span>
+                            <span class="tag">竞争对手分析</span>
+                            <span class="tag">市场调研</span>
+                            <span class="tag">用户研究</span>
+                            <span class="tag">行业报告</span>
+                        </div>
+                        <a href="#contact" class="btn btn--secondary">
+                            咨询服务
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="feature-row__image" data-animate="fade-right">
+                        <svg viewBox="0 0 500 350" style="width:100%;height:auto;background:var(--color-bg-elevated);border-radius:16px;padding:24px;">
+                            <!-- World Map Dots (simplified) -->
+                            <circle cx="120" cy="120" r="8" fill="var(--color-primary)" opacity="0.6"/>
+                            <circle cx="250" cy="100" r="6" fill="#4cc9f0" opacity="0.6"/>
+                            <circle cx="350" cy="130" r="10" fill="#00d4aa" opacity="0.6"/>
+                            <circle cx="400" cy="180" r="7" fill="var(--color-primary)" opacity="0.4"/>
+                            <circle cx="180" cy="200" r="5" fill="#4cc9f0" opacity="0.5"/>
+
+                            <!-- Connection Lines -->
+                            <line x1="120" y1="120" x2="250" y2="100" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="4,4"/>
+                            <line x1="250" y1="100" x2="350" y2="130" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="4,4"/>
+                            <line x1="350" y1="130" x2="400" y2="180" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="4,4"/>
+
+                            <!-- Service Cards -->
+                            <rect x="30" y="230" width="130" height="90" rx="10" fill="var(--color-bg-tertiary)" stroke="var(--color-primary)" stroke-width="1"/>
+                            <text x="50" y="260" fill="var(--color-text-primary)" font-size="12">出海调研</text>
+                            <rect x="50" y="275" width="90" height="6" rx="3" fill="var(--color-border)"/>
+                            <rect x="50" y="290" width="70" height="6" rx="3" fill="var(--color-border)" opacity="0.5"/>
+
+                            <rect x="180" y="230" width="130" height="90" rx="10" fill="var(--color-bg-tertiary)" stroke="#4cc9f0" stroke-width="1"/>
+                            <text x="200" y="260" fill="var(--color-text-primary)" font-size="12">竞品分析</text>
+                            <rect x="200" y="275" width="90" height="6" rx="3" fill="var(--color-border)"/>
+                            <rect x="200" y="290" width="70" height="6" rx="3" fill="var(--color-border)" opacity="0.5"/>
+
+                            <rect x="330" y="230" width="130" height="90" rx="10" fill="var(--color-bg-tertiary)" stroke="#00d4aa" stroke-width="1"/>
+                            <text x="350" y="260" fill="var(--color-text-primary)" font-size="12">市场调研</text>
+                            <rect x="350" y="275" width="90" height="6" rx="3" fill="var(--color-border)"/>
+                            <rect x="350" y="290" width="70" height="6" rx="3" fill="var(--color-border)" opacity="0.5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Transformation Section -->
+        <section class="section section--lg" id="digital-solutions">
+            <div class="container">
+                <header class="section__header" data-animate="fade-up">
+                    <span class="section__label">数智化转型</span>
+                    <h2 class="section__title">
+                        AI Agent中台<br>驱动企业智能化
+                    </h2>
+                    <p class="section__description">
+                        自研企业级AI Agent平台，从咨询到落地，提供全方位数智化服务
+                    </p>
+                </header>
+
+                <div class="features__grid" data-animate-stagger>
+                    <!-- AI Agent Platform -->
+                    <article class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="3" y1="9" x2="21" y2="9"/>
+                                <line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">AI Agent中台</h3>
+                        <p class="feature-card__description">
+                            企业级AI Agent管理与编排平台，统一管理多个AI Agent，实现智能协作与自动化。
+                        </p>
+                        <a href="#" class="feature-card__link">
+                            了解详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- AI Consulting -->
+                    <article class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">AI咨询</h3>
+                        <p class="feature-card__description">
+                            企业AI服务设计、AI教育培训、GEO优化，帮助企业制定AI战略规划。
+                        </p>
+                        <a href="#" class="feature-card__link">
+                            了解详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- AI Marketing -->
+                    <article class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">AI获客</h3>
+                        <p class="feature-card__description">
+                            AI驱动的智能获客系统，精准触达目标客户，提升转化效率。
+                        </p>
+                        <a href="#" class="feature-card__link">
+                            了解详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- AI Content -->
+                    <article class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">AI营销</h3>
+                        <p class="feature-card__description">
+                            AI内容生成、智能投放优化、效果归因分析，全面提升营销ROI。
+                        </p>
+                        <a href="#" class="feature-card__link">
+                            了解详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Custom Agent -->
+                    <article class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Agent定制</h3>
+                        <p class="feature-card__description">
+                            根据企业需求定制专属AI Agent，解决特定业务场景问题。
+                        </p>
+                        <a href="#" class="feature-card__link">
+                            了解详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- GEO Optimization -->
+                    <article class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">GEO优化</h3>
+                        <p class="feature-card__description">
+                            生成式引擎优化，让AI搜索引擎更容易找到和推荐你的内容。
+                        </p>
+                        <a href="#" class="feature-card__link">
+                            了解详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- IELabs Section -->
+        <section class="section section--lg feature-showcase">
+            <div class="container">
+                <div class="feature-row">
+                    <div class="feature-row__content" data-animate="fade-right">
+                        <span class="section__label">Innovation Lab</span>
+                        <h3 class="feature-row__title">
+                            IELabs 智创工坊
+                        </h3>
+                        <p class="feature-row__description">
+                            我们的创新实验室，探索AI技术前沿，孵化创新产品，分享技术见解与最佳实践。
+                        </p>
+                        <ul class="feature-row__list">
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                AI技术研究与实验
+                            </li>
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                创新产品孵化
+                            </li>
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                技术文章与教程分享
+                            </li>
+                        </ul>
+                        <a href="IELabs.html" class="btn btn--primary">
+                            访问 IELabs
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="feature-row__image" data-animate="fade-left">
+                        <svg viewBox="0 0 500 350" style="width:100%;height:auto;background:var(--color-bg-elevated);border-radius:16px;padding:24px;">
+                            <!-- Lab Equipment Abstract -->
+                            <circle cx="250" cy="175" r="80" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-dasharray="10,5"/>
+                            <circle cx="250" cy="175" r="50" fill="none" stroke="#4cc9f0" stroke-width="2"/>
+                            <circle cx="250" cy="175" r="20" fill="var(--color-primary)" opacity="0.3"/>
+
+                            <!-- Orbiting Elements -->
+                            <circle cx="330" cy="175" r="12" fill="#00d4aa"/>
+                            <circle cx="170" cy="175" r="10" fill="#4cc9f0"/>
+                            <circle cx="250" cy="95" r="8" fill="var(--color-primary)"/>
+                            <circle cx="250" cy="255" r="14" fill="#f8961e" opacity="0.8"/>
+
+                            <!-- Connection Lines -->
+                            <line x1="262" y1="175" x2="318" y2="175" stroke="var(--color-border)" stroke-width="1"/>
+                            <line x1="182" y1="175" x2="238" y2="175" stroke="var(--color-border)" stroke-width="1"/>
+                            <line x1="250" y1="107" x2="250" y2="155" stroke="var(--color-border)" stroke-width="1"/>
+                            <line x1="250" y1="195" x2="250" y2="241" stroke="var(--color-border)" stroke-width="1"/>
+
+                            <!-- Labels -->
+                            <rect x="50" y="280" width="100" height="40" rx="8" fill="var(--color-bg-tertiary)"/>
+                            <text x="100" y="305" fill="var(--color-text-secondary)" font-size="11" text-anchor="middle">Research</text>
+
+                            <rect x="200" y="280" width="100" height="40" rx="8" fill="var(--color-bg-tertiary)"/>
+                            <text x="250" y="305" fill="var(--color-text-secondary)" font-size="11" text-anchor="middle">Incubate</text>
+
+                            <rect x="350" y="280" width="100" height="40" rx="8" fill="var(--color-bg-tertiary)"/>
+                            <text x="400" y="305" fill="var(--color-text-secondary)" font-size="11" text-anchor="middle">Share</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section section--lg" id="about">
+            <div class="container">
+                <header class="section__header" data-animate="fade-up">
+                    <span class="section__label">About Us</span>
+                    <h2 class="section__title">
+                        关于 Moments
+                    </h2>
+                    <p class="section__description">
+                        我们是一家专注于AI技术的创新公司，致力于用人工智能技术赋能企业数智化转型。从调研洞察到落地实施，我们陪伴企业走好每一步。
+                    </p>
+                </header>
+
+                <div class="about-stats" data-animate="fade-up">
+                    <div class="about-stat">
+                        <span class="about-stat__value">2023</span>
+                        <span class="about-stat__label">成立年份</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat__value">上海</span>
+                        <span class="about-stat__label">总部所在地</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat__value">50+</span>
+                        <span class="about-stat__label">服务企业</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat__value">全栈</span>
+                        <span class="about-stat__label">AI服务能力</span>
+                    </div>
+                </div>
+
+                <!-- Trusted By -->
+                <div class="trusted-by" data-animate="fade-up">
+                    <h3 class="trusted-by__title">他们信任我们</h3>
+                    <div class="trusted-by__logos">
+                        <!-- 阿里云 Alibaba Cloud -->
+                        <div class="trusted-by__logo" title="阿里云">
+                            <img src="assets/img/alibaba.png" alt="阿里云" loading="lazy">
+                        </div>
+                        <!-- 字节跳动 ByteDance -->
+                        <div class="trusted-by__logo" title="字节跳动">
+                            <img src="assets/img/byteDance.png" alt="字节跳动" loading="lazy">
+                        </div>
+                        <!-- 果麦文化 Guomai -->
+                        <div class="trusted-by__logo" title="果麦文化">
+                            <img src="assets/img/guomai.png" alt="果麦文化" loading="lazy">
+                        </div>
+                        <!-- 百度 Baidu -->
+                        <div class="trusted-by__logo" title="百度">
+                            <img src="assets/img/baidu.png" alt="百度" loading="lazy">
+                        </div>
+                        <!-- 青岛啤酒 Tsingtao -->
+                        <div class="trusted-by__logo" title="青岛啤酒">
+                            <img src="assets/img/Tsingdao.jpeg" alt="青岛啤酒" loading="lazy">
+                        </div>
+                        <!-- 礼来 Eli Lilly -->
+                        <div class="trusted-by__logo" title="礼来">
+                            <img src="assets/img/lily.png" alt="礼来" loading="lazy">
+                        </div>
+                        <!-- 诺华 Novartis -->
+                        <div class="trusted-by__logo" title="诺华">
+                            <img src="assets/img/novartis.png" alt="诺华" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section class="section cta" id="contact">
+            <div class="container">
+                <div class="cta__content" data-animate="fade-up">
+                    <h2 class="cta__title">
+                        开启AI数智化之旅
+                    </h2>
+                    <p class="cta__description">
+                        无论您是需要AI调研支持，还是寻求数智化转型方案，我们都能为您提供专业服务。
+                    </p>
+                    <div class="cta__actions">
+                        <a href="mailto:contact@moments.top" class="btn btn--primary btn--lg">
+                            联系我们
+                        </a>
+                        <a href="#services" class="btn btn--ghost btn--lg">
+                            了解服务
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Background -->
+                <div class="cta__bg">
+                    <div class="cta__gradient"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <!-- Footer Top -->
+            <div class="footer__top" data-animate="fade-up">
+                <!-- Brand Column -->
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/img/logo.png" alt="Moments">
+                    </a>
+                    <p class="footer__tagline">
+                        AI驱动的企业数智化转型专家
+                    </p>
+                    <!-- Social Links -->
+                    <div class="footer__social">
+                        <a href="#" aria-label="微信" class="footer__social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89l-.006-.002-.4-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="footer__social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Columns -->
+                <nav class="footer__nav">
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">服务</h4>
+                        <ul class="footer__list">
+                            <li><a href="#ai-research">AI调研</a></li>
+                            <li><a href="#digital-transform">数智化转型</a></li>
+                            <li><a href="https://momodi.org" target="_blank" rel="noopener noreferrer">摸摸底产品</a></li>
+                            <li><a href="#">AI Agent定制</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">解决方案</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">出海调研</a></li>
+                            <li><a href="#">AI获客</a></li>
+                            <li><a href="#">AI营销</a></li>
+                            <li><a href="#">GEO优化</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">资源</h4>
+                        <ul class="footer__list">
+                            <li><a href="IELabs.html">IELabs智创工坊</a></li>
+                            <li><a href="#">技术博客</a></li>
+                            <li><a href="#">案例研究</a></li>
+                            <li><a href="#">帮助中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">公司</h4>
+                        <ul class="footer__list">
+                            <li><a href="#about">关于我们</a></li>
+                            <li><a href="#contact">联系我们</a></li>
+                            <li><a href="#">隐私政策</a></li>
+                            <li><a href="#">服务条款</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Moments. All rights reserved.
+                </p>
+                <a href="https://beian.miit.gov.cn/" class="footer__icp" target="_blank" rel="noopener noreferrer">
+                    沪ICP备2025143616号
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/site.js"></script>
+</body>
+</html>
