@@ -58,4 +58,24 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Booking Page (Chinese) -->
+    <url>
+        <loc>https://moments.top/book.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://moments.top/book.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://moments.top/book-en.html"/>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Booking Page (English) -->
+    <url>
+        <loc>https://moments.top/book-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://moments.top/book.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://moments.top/book-en.html"/>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
 </urlset>
